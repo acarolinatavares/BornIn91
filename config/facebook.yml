@@ -1,0 +1,11 @@
+development:
+  app_id: 1500369153564425
+  secret: ffa15b9954bfe722c485408e63fc0604
+
+test:
+  app_id: 1500369153564425
+  secret: ffa15b9954bfe722c485408e63fc0604
+
+production:
+  app_id: 1500369153564425
+  secret: ffa15b9954bfe722c485408e63fc0604
