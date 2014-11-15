@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b280c6-ea18-4acf-90c9-8f40c41d5e77" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="adv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1402349821950" ignored="false" />
+    <file path="/Dummy.txt" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416015598788" ignored="false" />
     <file path="/home.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416009064162" ignored="false" />
     <file path="/a.dummy" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1402348438812" ignored="false" />
     <file path="/_navbar.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416008928440" ignored="false" />
@@ -35,7 +36,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/application/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="6" selection-start="481" selection-end="481" vertical-scroll-proportion="-15.875">
+            <state line="26" column="6" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -44,7 +45,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="-8.125">
+            <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -53,16 +54,25 @@
       <file leaf-file-name="_navbar.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="85" selection-start="881" selection-end="881" vertical-scroll-proportion="-7.75">
+            <state line="18" column="85" selection-start="789" selection-end="789" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="50" selection-start="3469" selection-end="3469" vertical-scroll-proportion="0.41509435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="222" selection-end="222" vertical-scroll-proportion="0.29411766">
+            <state line="20" column="29" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,7 +81,7 @@
       <file leaf-file-name="themes.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/themes.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="661" column="31" selection-start="21407" selection-end="21407" vertical-scroll-proportion="-7.48">
+            <state line="661" column="31" selection-start="21407" selection-end="21407" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,15 +110,17 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/home.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="25" />
-    <option name="width" value="1366" />
-    <option name="height" value="743" />
+    <option name="width" value="1368" />
+    <option name="height" value="747" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -159,64 +171,6 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="correiabastos-master">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="correiabastos-master">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="correiabastos-master">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assets">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="stylesheets">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="correiabastos-master">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="app">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="assets">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -276,7 +230,7 @@
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/../correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -393,7 +347,7 @@
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="adv" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/../correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -419,7 +373,7 @@
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="adv" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/../correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -495,7 +449,7 @@
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/../correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -521,7 +475,7 @@
       <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/../correiabastos-master" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -585,19 +539,23 @@
       <created>1402349823887</created>
       <updated>1402349823887</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Alteracoes">
+      <created>1416015606499</created>
+      <updated>1416015606499</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
-    <editor active="false" />
+    <frame x="-1" y="25" width="1368" height="747" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13804173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13804173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2469697" sideWeight="0.86195827" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25075758" sideWeight="0.86195827" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -674,13 +632,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3848" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/themes.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="492" column="27" selection-start="16520" selection-end="16520" vertical-scroll-proportion="0.0">
@@ -711,9 +662,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3848" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="3848" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/themes.css">
@@ -725,63 +674,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3848" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.23809524">
-          <folding />
-        </state>
+        <state line="6" column="3848" selection-start="4045" selection-end="4045" vertical-scroll-proportion="0.23809524" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/themes.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="661" column="31" selection-start="21407" selection-end="21407" vertical-scroll-proportion="-7.48">
+        <state line="661" column="31" selection-start="21407" selection-end="21407" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_view/helpers/url_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="10" selection-start="10850" selection-end="10850" vertical-scroll-proportion="0.33199194">
-          <folding />
-        </state>
+        <state line="230" column="10" selection-start="10850" selection-end="10850" vertical-scroll-proportion="0.33199194" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/application/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="6" selection-start="481" selection-end="481" vertical-scroll-proportion="-15.875">
+        <state line="26" column="6" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="-8.125">
+        <state line="13" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/ruby_vm.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="85" selection-start="881" selection-end="881" vertical-scroll-proportion="-7.75">
+        <state line="18" column="85" selection-start="789" selection-end="789" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="222" selection-end="222" vertical-scroll-proportion="0.29411766">
+        <state line="84" column="50" selection-start="3469" selection-end="3469" vertical-scroll-proportion="0.41509435">
           <folding />
         </state>
       </provider>
