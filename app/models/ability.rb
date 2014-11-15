@@ -1,21 +1,14 @@
 class Ability
   include CanCan::Ability
 
-    def initialize(user)
-      if !user.nil?
-        user.roles.each do |role|
-          role.permissions.each do |permission|
-          if permission.subject_id.nil?
-            can permission.action.to_sym, (permission.subject_class.mb_chars.downcase.to_s== "all") ? :all : permission.subject_class.constantize
-          else
-            can permission.action.to_sym, permission.subject_class.constantize, :id => (permission.subject_id == 0 ? user.id : permission.subject_id )
-          end
-          end
-        end
-      else
-        user ||= User.new # guest user (not logged in)
-      end
+  def initialize(user)
+    user ||= Usuario.new # guest user (not logged in)
+    if user.moderador?
+      can :manage, :all
+    else
+      can :read, :all
     end
+  end
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)

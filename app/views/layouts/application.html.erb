@@ -10,10 +10,27 @@
 <body id="home">
 <%= flash_message.html_safe %>
       <%= render 'layouts/navbar'%>
+<div id=hero>
+  <div class="container">
+    <div class="row clearfix">
+      <h1 class="hero-text animated fadeInDown" style="text-align: center">
+        <%= image_tag("logo.png") %><br>
+      </h1>
+    </div>
+  </div>
+</div>
 
       <%= yield %>
-  <!--<div style="background-color: #f8f8f8; border: 1px solid #e7e7e7 !important;border-radius: 7px;margin-top: 20px;">-->
-    <%#= render 'layouts/footer'%>
+
+<div id="footer-white">
+  <div class="container">
+    <div class="row credits">
+      <div class="col-md-12">
+        Desenvolvido por <a href="mailto:atavares@id.uff.br">Ana Carolina Tavares</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

@@ -1,28 +1,46 @@
 #encoding: utf-8
-<header class="navbar navbar-inverse hero" role="banner">
-  <div class="container">
-    <!--######################################-->
-    <!--NÃO MEXA NO NAVBAR-HEADER. SE NÃO SOUBER O QUE ESTÁ FAZENDO, IRÁ FERRAR COM A VISUALIZACÃO EM DISPOSITIVOS MÓVEIS.-->
-    <!--######################################-->
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="<%= root_path%>" >Home</a>
-        </li>
-        <li class="dropdown">
-          <a href="#sobre" >Sobre</a>
-        </li>
-        <li class="dropdown">
-          <a href="#pesquisar">Pesquisar</a>
-        </li>
-        <li class="dropdown">
-          <a href="/auth/facebook">Login</a>
-        </li>
-        <li class="dropdown">
-          <a href="#novopost">Novo Post</a>
-        </li>
-      </ul>
-    </nav>
-  </div><!-- /.navbar-collapse -->
+<nav class="navbar navbar-inverse hero" role="navigation">
+
+  <!--######################################-->
+  <!--NÃO MEXA NO NAVBAR-HEADER. SE NÃO SOUBER O QUE ESTÁ FAZENDO, IRÁ FERRAR COM A VISUALIZACÃO EM DISPOSITIVOS MÓVEIS.-->
+  <!--######################################-->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navinho">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
   </div>
-</header>
+
+  <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="navinho">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="<%= root_path%>" >Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="sobre" >Sobre</a>
+      </li>
+      <li class="dropdown">
+        <a href="#pesquisar">Pesquisar</a>
+      </li>
+      <% if can? :manage, current_user%>
+          <li class="dropdown">
+            <a href="/posts/new">Novo Post</a>
+          </li>
+      <%end%>
+      <% if current_user %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.name %><b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Sair", "signout"%></li>
+            </ul>
+          </li>
+      <% else %>
+          <li class="dropdown">
+            <a href="/auth/facebook">Login</a>
+          </li>
+      <% end %>
+    </ul>
+  </nav>
+</nav>
