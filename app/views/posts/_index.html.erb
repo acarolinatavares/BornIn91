@@ -1,0 +1,12 @@
+<% @posts.each do |post| %>
+
+    <div class="post-preview">
+      <h2 class="post-title">
+        <%= link_to post.titulo, post %>
+      </h2>
+      <p class="post-meta">Postado por <%= link_to post.autor, usuario_path(post.usuario)%> em <%= post.created_at.strftime("%d/%m/%Y")%></p>
+    </div>
+    <hr>
+
+<%end%>
+<%= will_paginate @posts, renderer: BootstrapPagination::Rails %>

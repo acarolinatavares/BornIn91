@@ -1,5 +1,6 @@
 class Usuario < ActiveRecord::Base
   attr_accessible :access_token, :email, :name, :photo_url, :provider, :uid, :moderador
+  has_many :posts
 
 
   def self.find_or_create_with_omniauth(auth)

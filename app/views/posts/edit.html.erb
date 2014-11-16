@@ -1,4 +1,21 @@
-<h1>Editing post</h1>
+<%= tinymce %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@post) do |f| %>
+        <%= f.hidden_field :usuario_id, :value => @post.usuario_id %>
 
-<%= render 'form' %>
+        <div class="form-group">
+          <%= f.label :titulo, "Título:" %>
+          <%= f.text_field :titulo, :class=>"form-control", :value=> @post.titulo%>
+        </div>
+        <div class="form-group">
+          <%= f.text_area :corpo, :class => "tinymce", :rows => 40, :cols => 100, :value=>@post.corpo.html_safe%>
+        </div>
 
+
+        <div class="form-actions" align="center">
+          <%= f.submit "Salvar", :class=>"btn btn-success" %>
+        </div>
+    <% end %>
+  </div>
+</div>

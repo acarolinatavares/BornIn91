@@ -2,10 +2,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <h2 class="section-heading"><%= @post.titulo%></h2>
+        <h2 class="section-heading" style="margin-bottom: 15px;"><%= @post.titulo%></h2>
+
+        <span class="caption text-muted" style="margin-bottom: 25px;">Postado por <%= link_to @post.autor, usuario_path(@post.usuario)%> em <%= @post.created_at.strftime("%d/%m/%Y")%></span>
+
         <p><%=@post.corpo.html_safe%></p>
       </div>
     </div>
     <%#= social_share_button_tag(@post.titulo) %>
   </div>
 </article>
+<% if can? :manage, current_user%>
+<div class="form-actions" align="center">
+  <%= link_to "Editar", edit_post_path(@post), :class=>"btn btn-primary" %>
+  <%= link_to 'Excluir', post_path(@post), :method => "delete", :class => "btn btn-danger", :data => {:confirm => ("Tem certeza que deseja excluir esse post?")}%></span></td>
+</div>
+<%end%>
