@@ -8,6 +8,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+gem "social-buttons", '~> 0.3'
 gem 'omniauth-facebook'
 gem 'pg'
 gem 'jquery-rails','3.0.4'
