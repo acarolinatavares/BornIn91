@@ -1,0 +1,31 @@
+<%= form_for(@usuario) do |f| %>
+
+    <div class="form-group" align="center">
+      <img src="<%= @usuario.photo_url%>" class="img-thumbnail" >
+    </div>
+
+    <h2 class="section-heading" align="center"><%= @usuario.name %></h2>
+
+    <div class="form-group">
+      <%= f.label :name, "Nome:" %>
+      <%= f.text_field :name, :class=>"form-control", :value=>@usuario.name, :disabled => true%>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email, "Email:" %>
+      <%= f.text_field :email, :class=>"form-control", :value=>@usuario.email, :disabled => true%>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :moderador, "Moderador:  " %>
+      <%= f.check_box :moderador, :value=>@usuario.moderador%>
+    </div>
+
+    <div class="form-actions" align="center">
+      <%= f.submit "Salvar", :class=>"btn btn-success" %>
+    </div>
+<% end %>
+
+
+
+

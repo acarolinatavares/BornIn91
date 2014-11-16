@@ -21,20 +21,17 @@
       <li class="dropdown">
         <a href="/sobre">Sobre</a>
       </li>
-      <li class="dropdown">
-        <a href="#pesquisar">Pesquisar</a>
-      </li>
       <% if can? :manage, current_user%>
           <li class="dropdown">
             <a href="/posts/new">Novo Post</a>
           </li>
+          <li class="dropdown">
+            <a href="<%= usuarios_path %>">Gerenciar Usuários</a>
+          </li>
       <%end%>
       <% if current_user %>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.name %><b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Sair", "signout"%></li>
-            </ul>
+            <%= link_to "Sair", "signout"%>
           </li>
       <% else %>
           <li class="dropdown">

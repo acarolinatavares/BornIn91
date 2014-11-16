@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <h2 class="section-heading" align="center">Usuários</h2>
+      <br>
+          <table class="table table-striped" align="center">
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Moderador</th>
+            </tr>
+
+            <% @usuarios.each do |usuario| %>
+                <tr>
+                  <td><%= usuario.name %></td>
+                  <td><%= usuario.email %></td>
+                  <%@usuario = usuario%>
+                  <td>
+                    <%= link_to 'Editar', edit_usuario_path(usuario), :class => "btn btn-xs btn-primary "%>
+                  </td>
+            <% end %>
+            </tr>
+
+          </table>
+          <%= will_paginate @usuarios, renderer: BootstrapPagination::Rails %>
+    </div>
+  </div>
+</div>
+

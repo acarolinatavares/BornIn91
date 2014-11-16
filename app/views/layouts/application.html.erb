@@ -8,8 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="home">
-<%= flash_message.html_safe %>
-      <%= render 'layouts/navbar'%>
+<%= render 'layouts/navbar'%>
 <div id=hero>
   <div class="container">
     <div class="row clearfix">
@@ -19,8 +18,8 @@
     </div>
   </div>
 </div>
-
-      <%= yield %>
+<%= flash_message.html_safe %>
+<%= yield %>
 
 <div id="footer-white">
   <div class="container">

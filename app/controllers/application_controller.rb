@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   def home
-    @posts = Post.all
+    @posts = Post.paginate(:page => params[:page], :per_page => 5)
   end
 
   def current_user

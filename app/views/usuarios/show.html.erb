@@ -1,0 +1,25 @@
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div align="center">
+          <img src="<%= @usuario.photo_url%>" class="img-thumbnail" height="100" width="100">
+        </div>
+        <h2 class="section-heading" align="center" style="margin-bottom: 35px"><%= @usuario.name %></h2>
+        <div class="form-group" style="margin-bottom: 35px">
+          <%= label_tag :name, "Nome:" %>
+          <%= text_field_tag :name, @usuario.name, class: "form-control", disabled: true%>
+        </div>
+
+        <div class="form-group">
+          <%= label_tag :email, "Email:" %>
+          <%= text_field_tag :email, @usuario.email, class: "form-control", disabled: true%>
+        </div>
+
+        <div class="form-group">
+          <%= label_tag :moderador, "Moderador:  #{@usuario.moderador ? "Sim" : "Não"}" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

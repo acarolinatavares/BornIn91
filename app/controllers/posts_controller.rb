@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.json
+
+  before_filter :carrega_dados, :only => [:show]
+
   def index
     @posts = Post.all
 
@@ -80,4 +81,9 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def carrega_dados
+    @comentario = Comentario.new
+  end
+
 end

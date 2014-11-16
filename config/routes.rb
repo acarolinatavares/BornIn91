@@ -1,5 +1,9 @@
 RailsPadrao::Application.routes.draw do
 
+  resources :comentarios
+
+  resources :usuarios
+
   resources :posts
 
 
