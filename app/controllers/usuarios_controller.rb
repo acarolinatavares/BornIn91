@@ -23,7 +23,7 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @usuario.update_attributes(params[:usuario])
-        format.html { redirect_to @usuario, notice: 'Usuário alterado com sucesso.' }
+        format.html { redirect_to @usuario, notice: 'Usuario alterado com sucesso.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
