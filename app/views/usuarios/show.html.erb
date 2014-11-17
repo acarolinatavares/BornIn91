@@ -11,14 +11,15 @@
           <%= text_field_tag :name, @usuario.name, class: "form-control", disabled: true%>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="margin-bottom: 35px">
           <%= label_tag :email, "Email:" %>
           <%= text_field_tag :email, @usuario.email, class: "form-control", disabled: true%>
         </div>
-
-        <div class="form-group">
-          <%= label_tag :moderador, "Moderador:  #{@usuario.moderador ? "Sim" : "Não"}" %>
-        </div>
+        <% if can? :manage, current_user%>
+            <div class="form-group">
+              <%= label_tag :moderador, "Moderador:  #{@usuario.moderador ? "Sim" : "Não"}" %>
+            </div>
+        <%end%>
       </div>
     </div>
   </div>
@@ -27,8 +28,12 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <h2 class="section-heading" align="center" style="margin-bottom: 35px">Posts de <%= @usuario.name %></h2>
-      <%= render 'posts/index'%>
+      <h3 class="section-heading" align="center" style="margin-bottom: 35px">Posts</h3>
+      <% if @usuario.posts.any?%>
+          <%= render 'posts/index'%>
+      <%else%>
+          <h4 class="section-heading" align="center" style="margin-bottom: 35px">O usuário ainda não tem nenhum post</h4>
+      <%end%>
     </div>
   </div>
 </div>

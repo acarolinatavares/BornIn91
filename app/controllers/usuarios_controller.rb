@@ -1,7 +1,12 @@
 class UsuariosController < ApplicationController
 
   def index
-    @usuarios = Usuario.paginate(:page => params[:page], :per_page => 10)
+    if params[:moderador].nil?
+      @usuarios = Usuario.paginate(:page => params[:page], :per_page => 10)
+    else
+      params[:moderador] = nil
+      @usuarios = Usuario.where(:moderador=>true).paginate(:page => params[:page], :per_page => 10)
+    end
   end
 
   def edit

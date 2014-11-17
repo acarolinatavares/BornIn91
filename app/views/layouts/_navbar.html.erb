@@ -21,25 +21,34 @@
       <li class="dropdown">
         <a href="/sobre">Sobre</a>
       </li>
-      <% if can? :manage, current_user%>
-          <li class="dropdown">
-            <a href="/posts/new">Novo Post</a>
-          </li>
-          <li class="dropdown">
-            <a href="<%= usuarios_path %>">Gerenciar Usuários</a>
-          </li>
-      <%end%>
+
+      <li class="dropdown">
+        <a href="<%= usuarios_path(:moderador=>true) %>">Colaboradores</a>
+      </li>
+
       <% if current_user %>
           <li class="dropdown">
-            <%= link_to "Sair", "/signout"%>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= current_user.name%> <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <% if can? :manage, current_user%>
+                  <li>
+                    <a href="/posts/new">Novo Post</a>
+                  </li>
+                  <li>
+                    <a href="<%= usuarios_path %>">Gerenciar Usuários</a>
+                  </li>
+                  <li class="divider"></li>
+              <%end%>
+              <li><%= link_to "Sair", "/signout"%></li>
+            </ul>
           </li>
       <% else %>
           <li class="dropdown">
             <a href="/auth/facebook">Login via Facebook</a>
           </li>
-          <li class="dropdown">
-            <a href="/auth/twitter">Login via Twitter</a>
-          </li>
+          <!--<li class="dropdown">-->
+          <!--<a href="/auth/twitter">Login via Twitter</a>-->
+          <!--</li>-->
       <% end %>
     </ul>
   </nav>
