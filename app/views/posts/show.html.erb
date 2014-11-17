@@ -15,10 +15,27 @@
 </article>
 <% if can? :manage, current_user%>
     <div class="form-actions" align="center">
-      <%= link_to "Editar", edit_post_path(@post), :class=>"btn btn-primary" %>
-      <%= link_to 'Excluir', post_path(@post), :method => "delete", :class => "btn btn-danger", :data => {:confirm => ("Tem certeza que deseja excluir esse post?")}%></span></td>
+      <%= link_to "Editar", edit_post_path(@post), :class=>"btn btn-primary btn-xs" %>
+      <%= link_to 'Excluir', post_path(@post), :method => "delete", :class => "btn btn-danger btn-xs", :data => {:confirm => ("Tem certeza que deseja excluir esse post?")}%></span></td>
     </div>
 <%end%>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" align="center">
+      <h3 class="section-heading" style="margin-bottom: 30px;">Comentários</h3>
+      <%= render 'comentarios/index'%>
+    </div>
+  </div>
+</div>
+
+<div class="form-actions" align="center">
+  <button type="button" class="open-ComentarioDialog btn btn-primary btn-sm" data-toggle="modal" data-target="#newComentario" data-id="<%= @post.id %>">
+    Comentar
+  </button>
+</div>
+<%= render 'comentarios/new_comentario' %>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -28,3 +45,14 @@
     js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=1500369153564425&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script language="javascript">
+    $(document).on("click", ".open-ComentarioDialog", function () {
+        debugger;
+        var PostId = $(this).data('id');
+        $(".modal-body #comentario_post_id").val(PostId);
+// As pointed out in comments,
+// it is superfluous to have to manually call the modal.
+// $('#addBookDialog').modal('show');
+    });
+</script>

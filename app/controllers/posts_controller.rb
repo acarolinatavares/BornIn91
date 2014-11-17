@@ -3,11 +3,12 @@ class PostsController < ApplicationController
   before_filter :carrega_dados, :only => [:show]
 
   def index
-    @posts = Post..paginate(:page => params[:page], :per_page => 5)
+    @posts = Post.paginate(:page => params[:page], :per_page => 5)
   end
 
   def show
     @post = Post.find(params[:id])
+    @comentarios = @post.comentario.paginate(:page => params[:page], :per_page => 5)
   end
 
   def new
