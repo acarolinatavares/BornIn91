@@ -9,6 +9,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem "social-buttons", '~> 0.3'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'pg'
 gem 'jquery-rails','3.0.4'
