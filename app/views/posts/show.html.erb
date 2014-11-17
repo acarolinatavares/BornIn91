@@ -31,9 +31,14 @@
 </div>
 
 <div class="form-actions" align="center">
-  <button type="button" class="open-ComentarioDialog btn btn-primary btn-sm" data-toggle="modal" data-target="#newComentario" data-id="<%= @post.id %>">
-    Comentar
-  </button>
+  <% if current_user%>
+      <button type="button" class="open-ComentarioDialog btn btn-primary btn-sm" data-toggle="modal" data-target="#newComentario" data-id="<%= @post.id %>">
+        Comentar
+      </button>
+  <%else%>
+      <div><%= link_to "Comentar", "#", :class=>"btn btn-primary btn-sm", :disabled=> true, :placeholder=>"teste"%> </div>
+      <span class="caption text-muted" style="margin-bottom: 25px;">Faça login para comentar</span>
+  <%end%>
 </div>
 <%= render 'comentarios/new_comentario' %>
 

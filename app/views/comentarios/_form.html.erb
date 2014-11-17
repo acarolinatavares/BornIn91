@@ -1,5 +1,5 @@
 <%= form_for(@comentario) do |f| %>
-    <%= f.hidden_field :usuario_id, :value => current_user.id %>
+    <%= f.hidden_field :usuario_id, :value => current_user ? current_user.id : nil %>
     <%= f.hidden_field :post_id%>
 
     <div class="form-group">
