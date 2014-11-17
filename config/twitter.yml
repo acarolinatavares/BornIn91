@@ -1,0 +1,11 @@
+development:
+  consumer_key : SZ0mG2yyEvnSJ87k56pRx962X
+  consumer_secret: uY3RevCB8O5RCNqSgdHW4LeGKkLeN5OFsoSD5e5JlDNxQg8XT5
+
+test:
+  consumer_key: SZ0mG2yyEvnSJ87k56pRx962X
+  consumer_secret: uY3RevCB8O5RCNqSgdHW4LeGKkLeN5OFsoSD5e5JlDNxQg8XT5
+
+production:
+  consumer_key: SZ0mG2yyEvnSJ87k56pRx962X
+  consumer_secret: uY3RevCB8O5RCNqSgdHW4LeGKkLeN5OFsoSD5e5JlDNxQg8XT5
