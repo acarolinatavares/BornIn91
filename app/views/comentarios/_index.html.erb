@@ -2,7 +2,7 @@
 <% if @comentarios.any?%>
     <% @comentarios.each do |comentario| %>
 
-        <p><%=comentario.corpo%></p>
+        <p><%=comentario.corpo.html_safe%></p>
         <span class="caption text-muted" style="margin-bottom: 25px;">Por <%= comentario.usuario.name%></span>
         <hr>
 
