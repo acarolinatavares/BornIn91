@@ -3,21 +3,28 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2 class="section-heading" style="margin-bottom: 15px;"><%= @post.titulo%></h2>
-        <div class="form-actions" align="center">
         <span class="caption text-muted" style="margin-bottom: 25px;">Postado por <%= link_to @post.autor, usuario_path(@post.usuario)%> em <%= @post.created_at.strftime("%d/%m/%Y")%></span>
-
-          <%= like_button(FACEBOOK_CONFIG['app_id']) %>
+        <div class="form-actions">
           <%= tweet_button(text: "Novo post no BornIn91!.",:count=>"none") %>
+          <div class="fb-share-button" data-href="https://bornin91.herokuapp.com/posts/<%= @post.id%>" data-layout="button_count"></div>
         </div>
         <p><%=@post.corpo.html_safe%></p>
       </div>
     </div>
   </div>
 </article>
-
 <% if can? :manage, current_user%>
-<div class="form-actions" align="center">
-  <%= link_to "Editar", edit_post_path(@post), :class=>"btn btn-primary" %>
-  <%= link_to 'Excluir', post_path(@post), :method => "delete", :class => "btn btn-danger", :data => {:confirm => ("Tem certeza que deseja excluir esse post?")}%></span></td>
-</div>
+    <div class="form-actions" align="center">
+      <%= link_to "Editar", edit_post_path(@post), :class=>"btn btn-primary" %>
+      <%= link_to 'Excluir', post_path(@post), :method => "delete", :class => "btn btn-danger", :data => {:confirm => ("Tem certeza que deseja excluir esse post?")}%></span></td>
+    </div>
 <%end%>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=1500369153564425&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27b280c6-ea18-4acf-90c9-8f40c41d5e77" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/initializers/social_share_button.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/posts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/posts/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="adv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416180225984" ignored="false" />
+    <file path="/Dummy.txt" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416180748680" ignored="false" />
     <file path="/home.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416172838741" ignored="false" />
     <file path="/a.dummy" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416180189252" ignored="false" />
     <file path="/_navbar.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416161858801" ignored="false" />
@@ -26,7 +27,7 @@
     <file path="/_form.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416164544614" ignored="false" />
     <file path="/new.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416144182562" ignored="false" />
     <file path="/tinymce.yml" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416074966595" ignored="false" />
-    <file path="/show.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416179444895" ignored="false" />
+    <file path="/show.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416182356170" ignored="false" />
     <file path="/index.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416172587474" ignored="false" />
     <file path="/post.rb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416079542537" ignored="false" />
     <file path="/_new_comentario.html.erb" changelist="27b280c6-ea18-4acf-90c9-8f40c41d5e77" time="1416146067571" ignored="false" />
@@ -57,23 +58,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="21" selection-start="780" selection-end="780" vertical-scroll-proportion="0.35940802">
+            <state line="35" column="21" selection-start="780" selection-end="780" vertical-scroll-proportion="-21.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="49" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.125">
+            <state line="8" column="18" selection-start="540" selection-end="540" vertical-scroll-proportion="0.26030368">
               <folding>
-                <element signature="e#165#193#0" expanded="true" />
-                <element signature="e#309#337#0" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="9" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-18.5">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/application/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/themes.css" />
@@ -109,9 +118,10 @@
         <option value="$PROJECT_DIR$/config/initializers/social_share_button.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.coffee" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
       </list>
     </option>
   </component>
@@ -208,6 +218,46 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="initializers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="BornIn91">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="BornIn91">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="app">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="views">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="layouts">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -684,7 +734,11 @@
       <created>1416180232161</created>
       <updated>1416180232161</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Alteracoes">
+      <created>1416180753103</created>
+      <updated>1416180753103</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -879,20 +933,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="267" selection-end="267" vertical-scroll-proportion="-3.125">
-          <folding>
-            <element signature="e#165#193#0" expanded="true" />
-            <element signature="e#309#337#0" expanded="true" />
-          </folding>
+        <state line="52" column="9" selection-start="1342" selection-end="1342" vertical-scroll-proportion="-18.5">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="21" selection-start="780" selection-end="780" vertical-scroll-proportion="0.35940802">
+        <state line="35" column="21" selection-start="780" selection-end="780" vertical-scroll-proportion="-21.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-3.2.16/lib/action_dispatch/http/request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="8" selection-start="4872" selection-end="4872" vertical-scroll-proportion="0.33195877">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="540" selection-end="540" vertical-scroll-proportion="0.26030368">
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
